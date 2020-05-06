@@ -34,7 +34,7 @@ window.addEventListener('resize', () => {
 })
 
 //5. change to dark mode with keydown
-const background = document.querySelector('*');
+const background = document.querySelector('*'); //shift  or *
 const header = document.querySelector('.main-navigation')
 const footer = document.querySelector('.footer')
 document.addEventListener('keydown', (event) => {
@@ -49,7 +49,7 @@ document.addEventListener('keydown', (event) => {
 })
 
 //6. change back to light mode with keypress
-document.addEventListener('keypress', (event) => {
+document.addEventListener('keypress', (event) => { //shift  or *
   if (background.style.backgroundColor != 'white') {
     background.style.backgroundColor = 'white';
     background.style.color = 'grey';
@@ -74,7 +74,7 @@ document.addEventListener('mouseup', (event) => {
 //9. scroll
 window.addEventListener('scroll', (event) => {
   background.style.backgroundColor = 'pink';
-  header.style.backgroundColor = 'tana';
+  header.style.backgroundColor = 'lightblue';
   footer.style.backgroundColor = 'purple'
 })
 
@@ -84,8 +84,6 @@ const introsec = document.querySelector('.intro').addEventListener("contextmenu"
     duration: 1,
     rotateY: 180,
     ease: "elastic(1, 0.75)"
-
-
   })
   event.stopPropagation();
 }) //5
