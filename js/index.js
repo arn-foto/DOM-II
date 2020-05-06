@@ -27,11 +27,18 @@ hover.addEventListener('mouseover', (event) => {
 }, false);
 
 //4. resize
-const images = document.querySelector('#sand-bus')
+// const images = document.querySelector('#sand-bus')
+// images.src = siteContent['sand-bus-src'];
+// images.addEventListener('resize', () => {
+//   images.src = "/img/fun-bus.jpg";
+// })
 
-window.addEventListener('resize', () => {
-  images.src = "/img/fun-bus.jpg";
-})
+// images.addEventListener("mouseleave", (event) => {
+//   event.target.style.transform = "scale(1)"
+// })
+
+
+
 
 //5. change to dark mode with keydown
 const background = document.querySelector('*'); //shift  or *
@@ -86,7 +93,7 @@ const introsec = document.querySelector('.intro').addEventListener("contextmenu"
     ease: "elastic(1, 0.75)"
   })
   event.stopPropagation();
-}) //5
+})
 
 
 
