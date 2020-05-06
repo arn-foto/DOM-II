@@ -27,7 +27,7 @@ hover.addEventListener('mouseover', (event) => {
 }, false);
 
 //4. resize
-const images = document.querySelector('#big bus')
+const images = document.querySelector('#sand-bus')
 
 window.addEventListener('resize', () => {
   images.src = "/img/fun-bus.jpg";
