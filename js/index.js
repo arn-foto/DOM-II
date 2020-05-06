@@ -26,17 +26,12 @@ hover.addEventListener('mouseover', (event) => {
   }, 1000);
 }, false);
 
+
 //4. resize
-// const images = document.querySelector('#sand-bus')
-// images.src = siteContent['sand-bus-src'];
-// images.addEventListener('resize', () => {
-//   images.src = "/img/fun-bus.jpg";
-// })
-
-// images.addEventListener("mouseleave", (event) => {
-//   event.target.style.transform = "scale(1)"
-// })
-
+const images = document.querySelector('#sand-bus')
+document.addEventListener('resize', () => {
+  images.src = "/img/fun-bus.jpg";
+})
 
 
 
@@ -94,8 +89,6 @@ const introsec = document.querySelector('.intro').addEventListener("contextmenu"
   })
   event.stopPropagation();
 })
-
-
 
 const allimg = document.querySelectorAll("img").forEach(el => {
   el.addEventListener("dblclick", () => {
