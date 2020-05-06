@@ -3,14 +3,14 @@
 //1. Change image to a different image with click
 const changeImg = document.querySelector('img');
 changeImg.addEventListener("click", () => {
-  if (changeImg.src != "/img/funner-bus.png"){
-    changeImg.src = "/img/funner-bus.png";
+  if (changeImg.src != "/img/funner-bus.jpg") {
+    changeImg.src = "/img/funner-bus.jpg";
   }
 })
 
 //2. change image back with double click
 changeImg.addEventListener("dblclick", () => {
-  if (changeImg.src != "/img/fun-bus.jpg"){
+  if (changeImg.src != "/img/fun-bus.jpg") {
     changeImg.src = "/img/fun-bus.jpg";
   }
 });
@@ -20,8 +20,8 @@ let hover = document.querySelector('.nav');
 hover.addEventListener('mouseover', (event) => {
   event.target.style.color = 'orange';
 
-// reset the color after a short delay
-  setTimeout(function() {
+  // reset the color after a short delay
+  setTimeout(function () {
     event.target.style.color = "";
   }, 1000);
 }, false);
@@ -30,7 +30,7 @@ hover.addEventListener('mouseover', (event) => {
 const images = document.querySelector('#blow-bus')
 
 window.addEventListener('resize', () => {
-  images.src ="/img/blown-bus.jpg";
+  images.src = "/img/blown-bus.jpg";
 })
 
 //5. change to dark mode with keydown
@@ -38,7 +38,7 @@ const background = document.querySelector('*');
 const header = document.querySelector('.main-navigation')
 const footer = document.querySelector('.footer')
 document.addEventListener('keydown', (event) => {
-  if(background.style.backgroundColor != 'grey'){
+  if (background.style.backgroundColor != 'grey') {
     background.style.backgroundColor = 'grey';
     background.style.color = 'whitesmoke';
     header.style.backgroundColor = 'grey';
@@ -50,7 +50,7 @@ document.addEventListener('keydown', (event) => {
 
 //6. change back to light mode with keypress
 document.addEventListener('keypress', (event) => {
-  if(background.style.backgroundColor != 'white'){
+  if (background.style.backgroundColor != 'white') {
     background.style.backgroundColor = 'white';
     background.style.color = 'grey';
     header.style.backgroundColor = 'white';
@@ -81,25 +81,25 @@ window.addEventListener('scroll', (event) => {
 //10. flip cards with gsap
 const introsec = document.querySelector('.intro').addEventListener("contextmenu", (event) => {
   gsap.to('.intro', {
-       duration: 1,
-       rotateY: 180,
-       ease: "elastic(1, 0.75)"
-       
+    duration: 1,
+    rotateY: 180,
+    ease: "elastic(1, 0.75)"
 
-      })
-      event.stopPropagation();
-  })//5
 
-  
-  
-const allimg = document.querySelectorAll("img").forEach(el => {
-el.addEventListener("dblclick", () => {
-  gsap.to(el, {
-   duration: 1,
-   rotateX: 180,
-   ease: "elastic(1, 0.75)"
   })
-})
+  event.stopPropagation();
+}) //5
+
+
+
+const allimg = document.querySelectorAll("img").forEach(el => {
+  el.addEventListener("dblclick", () => {
+    gsap.to(el, {
+      duration: 1,
+      rotateX: 180,
+      ease: "elastic(1, 0.75)"
+    })
+  })
 })
 
 //prevent default
