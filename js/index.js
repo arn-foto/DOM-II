@@ -27,10 +27,10 @@ hover.addEventListener('mouseover', (event) => {
 }, false);
 
 //4. resize
-const images = document.querySelector('#blow-bus')
+const images = document.querySelector('#big bus')
 
 window.addEventListener('resize', () => {
-  images.src = "/img/blown-bus.jpg";
+  images.src = "/img/fun-bus.jpg";
 })
 
 //5. change to dark mode with keydown
