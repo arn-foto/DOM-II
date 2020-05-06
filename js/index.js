@@ -106,10 +106,3 @@ const allimg = document.querySelectorAll("img").forEach(el => {
     })
   })
 })
-
-//prevent default
-const prevent = document.querySelectorAll('a').forEach(el => {
-  eladdEventListener('click', () => {
-    event.preventDefault();
-  })
-})
